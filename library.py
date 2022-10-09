@@ -14,21 +14,21 @@ def available_books():
         print(book)
 
 # 1.2 TODO: Run the 'available_books' function
-# available_books()
+available_books()
 
 print('-----------------------')
 # 1.3 TODO: Create a function named 'check_out' that removes a book from the books list
-def check_out():
-    books.remove('SAPIENS')
+def check_out(book_title):
+    books.remove(book_title)
 # Parameters: book_title (string)
 # Return: Not needed for this function
 
 
 # 1.4 TODO: Check out 'SAPIENS' using the check_out function
-# check_out()
+check_out('SAPIENS')
 
 # 1.5 TODO: Run the 'available_books' function again to see if the book was checked out
-# available_books()
+available_books()
 
 print('-----------------------')
 # 1.6 TODO: Create a function 'check_in' that adds a book to the end of the books list
@@ -43,7 +43,7 @@ def check_in(book_title):
 # 1.7 TODO: Check in 'SAPIENS' using the check_in function
 check_in('SAPIENS')
 # 1.8 TODO: Run the 'available_books' function to see if the book was checked in
-# available_books()
+available_books()
 
 print('-----------------------')
 # 1.9 TODO: Create a function 'search_by_name' that prints 'Available' if exists in books list, 'Not Available' if it doesn't.
@@ -57,7 +57,7 @@ def search_by_name(book_title):
 
 
 # 1.10 TODO: Search for the book 'JUST MERCY'
-search_by_name("JUST MERCY")
+search_by_name('JUST MERCY')
 
 # 1.11 TODO: Search for the book '4000 WEEKS'
 search_by_name('4000 WEEKS')
@@ -136,6 +136,7 @@ books_with_details = [
 
 # 2.0 TODO: In a comment, describe the structure of the data in books_with_details.
 # What types of data are nested within others? How do you know?
+#The structure of the data in list variable book_with details is a dictionary. books-with_details is a list because the data structure begins with []. IT contains a dictionary because that begins with {}
 
 # List of Dictionaries
 
@@ -168,3 +169,4 @@ def search_by_author(author):
 
 print(search_by_author('Yuval Noah Harari'))
 
+		
