@@ -36,7 +36,7 @@ print('-----------------------')
 # Return: Not needed for this function
 def check_in(book_title):
     books.append(book_title)
-    print(book_title)
+
 
 
 
@@ -157,7 +157,6 @@ print(count_books())
 # Return - author's books (list of strings)
 # Hint - You will need a for loop, if statement, and .append() for this solution!
 def search_by_author(author):
-
     title_by_author = []
     for book in books_with_details:
         if book['author'] == author:
